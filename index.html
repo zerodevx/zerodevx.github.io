@@ -1,37 +1,40 @@
 <!doctype html>
-<html>
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="generator" content="zerodevx web development experts" />
-  <meta name="description" content="zerodevx web development experts">
-  <meta name="keywords" content="zerodevx web development experts">
-  <title>zero-dev-x</title>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We are, first and foremost, engineers. We are, first and foremost, engineers. Ultra-modern high-performance web engineering and technology advisory.">
+    <title>zero-dev-x | Web Development Experts</title>
+    <link rel="stylesheet" href="./styles/skeleton.css">
+    <link rel="stylesheet" href="./styles/animate.min.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66946548-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-66946548-3');
+    </script>
+    <style>
+      h4 { display: inline-block; opacity: 0; transition: opacity 0.2s ease-in-out; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Hello World!</h1>
+      <p>I wish there was something more...</p>
+      <button class="button-primary">And?</button>
+      <br><br>
+      <h4>There isn't.</h4>
+    </div>
 
-  <meta name="theme-color" content="#424242">
-  <link rel="manifest" href="manifest.json">
-  <meta name="msapplication-TileColor" content="#424242">
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="application-name" content="zerodevx">
-  <link rel="icon" sizes="192x192" href="images/zdx_192x192.png">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="zerodevx">
-  <link rel="apple-touch-icon" href="images/zdx_144x144.png">
-  <meta name="msapplication-TileImage" content="images/zdx_144x144.png">
-
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-66946548-1', 'auto');
-    ga('send', 'pageview');
-
-  </script>
-</head>
-<body>
-  hello world
-</body>
+    <script>
+      document.querySelector('button').addEventListener('click', function() {
+        var el = document.querySelector('h4');
+        el.style.opacity = '1';
+        el.classList.add('animated', 'flip', 'infinite');
+        gtag('event', 'screen_view', { screen_name: 'curious' });
+      });
+    </script>
+  </body>
 </html>
