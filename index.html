@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="We are, first and foremost, engineers. We are, first and foremost, engineers. Ultra-modern high-performance web engineering and technology advisory.">
     <title>zero-dev-x | Web Development Experts</title>
-    <link rel="stylesheet" href="./styles/skeleton.css">
-    <link rel="stylesheet" href="./styles/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66946548-3"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -16,25 +15,76 @@
       gtag('config', 'UA-66946548-3');
     </script>
     <style>
-      h4 { display: inline-block; opacity: 0; transition: opacity 0.2s ease-in-out; }
+      .container { text-align: center; }
+      .hero {
+        height: 50vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFF1BC;
+      }
     </style>
   </head>
   <body>
     <div class="container">
-      <h1>Hello World!</h1>
-      <p>I wish there was something more...</p>
-      <button class="button-primary">And?</button>
-      <br><br>
-      <h4>There isn't.</h4>
+      <section class="hero">
+        <div>
+          <h1>Hello!</h1>
+          <p>Welcome to my page, and here are my stuff.</p>
+          <a class="button button-primary" href="mailto:jason@zerodevx.com" target="_blank">SAY HI</a>
+        </div>
+      </section>
+      <section>
+        <h4>Maintained</h4>
+        <table class="u-full-width">
+          <thead>
+            <tr>
+              <th>What</th>
+              <th>Why</th>
+              <th>Where</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>zero-md</td>
+              <td>Ridiculously simple markdown displayer - a native web component based on Custom Elements v1 specs to load and display an external MD file.</td>
+              <td><a target="_blank" href="https://zerodevx.github.io/zero-md/">Link</a></td>
+            </tr>
+            <tr>
+              <td>tachyons-amp-build</td>
+              <td>A barebones AMP-compatible TACHYONS build.</td>
+              <td><a target="_blank" href="https://zerodevx.github.io/tachyons-amp-build/">Link</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <h4>Not Maintained</h4>
+        <table class="u-full-width">
+          <thead>
+            <tr>
+              <th>What</th>
+              <th>Why</th>
+              <th>Where</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>zero-list-hero</td>
+              <td>It's hero time! A Polymer 1.1+ web component that hero-animates and layouts a sequence of elements.</td>
+              <td><a target="_blank" href="https://zerodevx.github.io/zero-list-hero/">Link</a></td>
+            </tr>
+            <tr>
+              <td>zero-transformicon</td>
+              <td>Animated icon buttons! A Polymer port of Transformicons.</td>
+              <td><a target="_blank" href="https://zerodevx.github.io/zero-transformicon/">Link</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <footer>
+        <p>Anything? <a target="_blank" href="mailto:jason@zerodevx.com">Get me.</a></p>
+      </footer>
     </div>
-
-    <script>
-      document.querySelector('button').addEventListener('click', function() {
-        var el = document.querySelector('h4');
-        el.style.opacity = '1';
-        el.classList.add('animated', 'flip', 'infinite');
-        gtag('event', 'screen_view', { screen_name: 'curious' });
-      });
-    </script>
   </body>
 </html>
