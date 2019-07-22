@@ -1,0 +1,31 @@
+{
+  "name": "zerodevx.github.io",
+  "version": "1.0.0",
+  "description": "Github Homepage - https://zerodevx.github.io",
+  "main": "index.js",
+  "scripts": {
+    "css:get": "curl -L -o styles/styles.css https://cdn.jsdelivr.net/combine/gh/necolas/normalize.css@8/normalize.css,gh/milligram/milligram@1/dist/milligram.css",
+    "css:rr-font": "rr \"font-family: 'Roboto', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;\" \"font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoj', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';\" styles/styles.css",
+    "css:rr-color": "rr '#9b4dca' '#1C75BC' styles/styles.css",
+    "css:min": "cleancss -O1 specialComments:0 styles/styles.css > styles/styles.min.css",
+    "build:css": "npm-run-all -s css:*",
+    "serve": "http-server -p 8000 -c-1",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zerodevx/zerodevx.github.io.git"
+  },
+  "author": "Jason Lee <jason@zerodevx.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zerodevx/zerodevx.github.io/issues"
+  },
+  "homepage": "https://github.com/zerodevx/zerodevx.github.io#readme",
+  "devDependencies": {
+    "clean-css-cli": "^4.3.0",
+    "http-server": "^0.11.1",
+    "npm-run-all": "^4.1.5",
+    "rexreplace": "^4.1.1"
+  }
+}
