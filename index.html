@@ -16,6 +16,15 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-66946548-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-66946548-3');
+  </script>
+
   <link rel="stylesheet" href="/styles/styles.min.css">
   <style>
     .hero {
@@ -123,7 +132,7 @@
       <div class="absolute flex-center">
         <h1>Open Source.</h1>
         <p>A personal collection of open-source repos to engineer web things.</p>
-        <a class="button" href="mailto:jason@zerodevx.com">CONNECT WITH ME</a>
+        <a id="cta" class="button" href="mailto:jason@zerodevx.com">CONNECT WITH ME</a>
       </div>
     </section>
 
